@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JustBonita Videos</title>
+<link rel="stylesheet" href="css/stylish.css" />
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+<script type="text/javascript" src="jquery.aw-showcase.js"></script>
+<script type="text/javascript">
+ 
+$(document).ready(function()
+{
+	$("#showcase").awShowcase(
+	{
+		content_width:			700,
+		content_height:			470,
+		fit_to_parent:			false,
+		auto:					false,
+		interval:				3000,
+		continuous:				false,
+		loading:				true,
+		tooltip_width:			200,
+		tooltip_icon_width:		32,
+		tooltip_icon_height:	32,
+		tooltip_offsetx:		18,
+		tooltip_offsety:		0,
+		arrows:					true,
+		buttons:				true,
+		btn_numbers:			true,
+		keybord_keys:			true,
+		mousetrace:				false, /* Trace x and y coordinates for the mouse */
+		pauseonover:			true,
+		stoponclick:			false,
+		transition:				'hslide', /* hslide/vslide/fade */
+		transition_delay:		0,
+		transition_speed:		500,
+		show_caption:			'onload', /* onload/onhover/show */
+		thumbnails:				false,
+		thumbnails_position:	'outside-last', /* outside-last/outside-first/inside-last/inside-first */
+		thumbnails_direction:	'vertical', /* vertical/horizontal */
+		thumbnails_slidex:		1, /* 0 = auto / 1 = slide one thumbnail / 2 = slide two thumbnails / etc. */
+		dynamic_height:			false, /* For dynamic height to work in webkit you need to set the width and height of images in the source. Usually works to only set the dimension of the first slide in the showcase. */
+		speed_change:			true, /* Set to true to prevent users from swithing more then one slide at once. */
+		viewline:				false, /* If set to true content_width, thumbnails, transition and dynamic_height will be disabled. As for dynamic height you need to set the width and height of images in the source. */
+		custom_function:		null /* Define a custom function that runs on content change */
+	});
+});
+
+</script>
+</head>
+<body>
+
+<div class="menu">
+<!--<a href="index.html" class="active">Demo #1</a> (Normal) | <a href="index2.html">Demo #2</a> (Vertical thumnbails) | <a href="index3.html">Demo #3</a> (Horizontal thumbnails) | <a href="index4.html">Demo #4</a> (Dynamic height) | <a href="index5.html">Demo #5</a> (Hundred percent) | <a href="index6.html">Demo #6</a> (Viewline)---></div>
+
+<div style="width: 700px; margin: auto;">
+
+	<!-- This is the button used to switch between One Page and Slideshow. -->
+    <!--
+	<p><a id="awOnePageButton" href="#showcase"><span class="view-page">View As One Page</span><span class="view-slide">View As Slideshow</span></a></p>-->
+
+	<div id="showcase" class="showcase">
+		<!-- Each child div in #showcase represents a slide -->
+		<div class="showcase-slide">
+			<!-- Put the slide content in a div with the class .showcase-content. -->
+			<div class="showcase-content">
+				<iframe src="http://www.youtube.com/embed/46-cM0VEkjM" width="700" height="470" frameborder="0"></iframe>
+			</div>
+		</div>
+        <div class="showcase-slide">
+			<!-- Put the slide content in a div with the class .showcase-content. -->
+			<div class="showcase-content">
+				<div class="showcase-content-wrapper">
+					<h1>Bonita - Hip Hop Gone</h1>
+				</div>
+			</div>
+		</div>
+		<!-- Each child div in #showcase represents a slide -->
+		<div class="showcase-slide">
+			<!-- Put the slide content in a div with the class .showcase-content. -->
+			<div class="showcase-content">
+				<iframe src="http://www.youtube.com/embed/aELP8Q8l3rQ" width="700" height="470" frameborder="0"></iframe>
+			</div>
+		</div>
+        <div class="showcase-slide">
+			<!-- Put the slide content in a div with the class .showcase-content. -->
+			<div class="showcase-content">
+				<div class="showcase-content-wrapper">
+					<h1>Bonita - "HIM" (Live)</h1>
+				</div>
+			</div>
+		</div>
+		<!-- Each child div in #showcase represents a slide -->
+		<div class="showcase-slide">
+			<!-- Put the slide content in a div with the class .showcase-content. -->
+			<div class="showcase-content">
+				<iframe src="http://www.youtube.com/embed/-z6mUoEYAEQ" width="700" height="470" frameborder="0"></iframe>
+			</div>
+		</div>
+        <div class="showcase-slide">
+			<!-- Put the slide content in a div with the class .showcase-content. -->
+			<div class="showcase-content">
+				<div class="showcase-content-wrapper">
+					<h1>Bonita - Sorry Babe</h1>
+				</div>
+			</div>
+		</div>
+		<!-- Each child div in #showcase represents a slide -->
+		<div class="showcase-slide">
+			<!-- Put the slide content in a div with the class .showcase-content. -->
+			<div class="showcase-content">
+				<iframe src="http://www.youtube.com/embed/EFoSkcfZX-0" width="700" height="470" frameborder="0"></iframe>
+			</div>
+		</div>
+		</div>
+	</div>
+		
+</div>
+
+<div style="text-align: center; margin-top: 50px;">
+	<!--<a href="http://www.awkwardgroup.com/sandbox/awkward-showcase-a-jquery-plugin">
+		Click here to download and learn more about this jQuery plugin.
+	</a>--->
+</div>
+
+<div style="position:absolute;filter:alpha(opacity=0);opacity:0.001;z-index:10;"> <a href="http://www.turnkeyeducation.net/"><b>black infrared 23 13s</b></a> <a href="http://www.noahmclaurine.com/"><b>jordan 11 legend blue</b></a> <a href="http://www.yoramgal.co.il/"><b>jordan 11 legend blue</b></a> <a href="http://www.dehartsystems.com/"><b>legend blue 11s</b></a> <a href="http://www.asamai.com/"><b>legend blue 11s</b></a> <a href="http://www.bluewaterwinedist.com/"><b>jordan 11 legend blue</b></a> <a href="http://helpingbusinessesgrow.org/"><b>jordan 11 legend blue</b></a> <a href="http://www.kalbindustries.com/"><b>jordan 13 black infrared 23</b></a> <a href="http://www.themountainhouse.com/"><b>jordan 13 black infrared 23</b></a> <a href="http://www.morphis.com/"><b>jordan 11 legend blue</b></a> <a href="http://www.wema-vogtland.us/"><b>jordan 11 legend blue</b></a> <a href="http://www.sdhdi.com/"><b>jordan 11 legend blue</b></a> <a href="http://helpingbusinessesgrow.org/"><b>jordan 11 legend blue</b></a> <a href="http://www.dewittshandyman.com/"><b>legend blue 11s</b></a> <a href="http://www.docart.com/"><b>jordan 11 legend blue</b></a> <a href="http://www.arizonawindsymphony.org/"><b>jordan 11 legend blue</b></a> <a href="http://odelltrailers.com/"><b>legend blue 11s</b></a> <a href="http://www.jschepper.net/"><b>black infrared 23 13s</b></a> <a href="http://www.ispdi.com/"><b>legend blue 11s</b></a> <a href="http://www.geminimg.com/"><b>jordan 13 black red</b></a> <a href="http://www.kleincreative.tv/"><b>jordan 13 black infrared 23</b></a> <a href="http://www.alexlperson.com/"><b>legend blue 11s</b></a> <a href="http://www.88artes.com/"><b>jordan 11 legend blue</b></a> <a href="http://www.inlandvalleykids.com/"><b>jordan 11 legend blue</b></a> <a href="http://www.kona-kohala.org/"><b>jordan 11 legend blue</b></a> <a href="http://safetyengineer.com/"><b>legend blue 11s</b></a> <a href="http://www.electmattpina.com/"><b>black infrared 13s</b></a> <a href="http://www.nuac.ca/"><b>legend blue 11s</b></a> <a href="http://www.townofbroadalbin.org/"><b>jordan 11 legend blue</b></a> <a href="http://www.mypetropolis.com/"><b>jordan 11 legend blue</b></a> <a href="http://www.twinoakspress.com/"><b>jordan 13 black infrared 23</b></a> <a href="http://www.guardianbuilding.com/"><b>legend blue 11s</b></a> <a href="http://www.bongerwebdesign.com/"><b>jordan 11 legend blue</b></a> <a href="http://www.mypetropolis.com/"><b>legend blue 11s</b></a> <a href="http://www.laromaineblog.com/"><b>jordan 11 legend blue</b></a> <a href="http://safetyengineer.com/"><b>jordan 11 legend blue</b></a> <a href="http://www.perpetualtriathlon.com/"><b>legend blue 11s</b></a> <a href="http://www.deparisnailspa.com/"><b>black infrared 13s</b></a> <a href="http://www.noahmclaurine.com/"><b>legend blue 11s</b></a> <a href="http://www.whitebirchfarmnj.com/"><b>jordan 11 legend blue</b></a> <a href="http://www.budwig.com/"><b>michael kors black friday</b></a> <a href="http://www.thiscaringhome.org"><b>michael kors Black Friday</b></a> <a href="http://www.toonbrite.com/"><b>michael kors black friday</b></a> <a href="http://www.mc-med.org"><b>coach black friday</b></a> <a href="http://www.rolloffs.net/"><b>michael kors black friday</b></a> <a href="https://www.norceca.net/"><b>uggs Black Friday</b></a> <a href="http://bvbhof.com/"><b>moncler black friday</b></a> <a href="http://davisvillefleamarket.com/"><b>lululemon black friday</b></a> <a href="http://www.johnstonbuilders.com"><b>Abercrombie and fitch cyber monday</b></a> <a href="http://www.kjmultisport.com/"><b>canada goose black friday</b></a> <a href="http://www.customhomesbycory.com/"><b>moncler cyber monday</b></a> <a href="http://www.mtitv.com"><b>Ray Ban cyber monday</b></a> <a href="http://www.cleanhouston.org/"><b>Babyliss cyber monday</b></a> <a href="http://www.bwaysmiles.com/"><b>victoria's secret cyber monday</b></a> <a href="http://www.magformers.com"><b>burberry black friday</b></a> <a href="http://www.bwaysmiles.com"><b>victoria's secret black friday</b></a> <a href="http://www.nycmannies.com/"><b>uggs cyber monday</b></a> <a href="http://www.tunesource.com/"><b>uggs black Friday</b></a> <a href="http://www.tunesource.com/"><b>uggs black Friday</b></a> <a href="http://www.ilrte6083study.com/"><b>uggs cyber monday</b></a> <a href="http://www.airtelplaza.com/"><b>coach black Friday</b></a> <a href="http://trystsalonandspa.com/"><b>true religion cyber monday</b></a> <a href="http://farella.com/"><b>michael kors cyber monday</b></a> <a href="http://www.ranchwise.com/"><b>kate spade cyber monday</b></a> <a href="http://www.andrewvarela.com/"><b>canada goose black friday</b></a> <a href="http://www.kruathaicuisine.com/"><b>uggs cyber monday</b></a> <a href="http://shepherdinggrace.org/"><b>jordan black friday</b></a> <a href="http://stpauls.me/"><b>michael kors black Friday</b></a> <a href="http://subqconcrete.com/"><b>kate spade cyber monday</b></a> <a href="http://www.thejogtog.com/"><b>uggs black friday</b></a> <a href="http://www.kabukicuisine.com/"><b>beats by dre black friday</b></a> <a href="http://www.seiki.com/"><b>uggs black Friday</b></a> <a href="http://easterndistributors.us/"><b>beats by dre black friday</b></a> <a href="http://smt-1.com/"><b>north face cyber Monday</b></a> <a href="http://www.patchogueprinting.com"><b>jordan black friday</b></a> <a href="http://www.montrosemolders.com/"><b>true religion cyber monday</b></a> <a href="http://estatebuyers.com/"><b>Mulberry cyber monday</b></a> <a href="http://www.eclipsesolargear.com/"><b>lululemon cyber monday</b></a> <a href="http://www.wolfrobotics.com/"><b>Oakley black Friday</b></a> <a href="http://www.dcioffice.com/"><b>lululemon black friday</b></a> <a href="http://www.alcoholfreeperfumes.net"><b>uggs cyber Monday</b></a> <a href="http://www.beautyemporiumandsalon.com/"><b>uggs cyber monday</b></a> <a href="http://montanamsgs.org/"><b>chanel cyber monday</b></a> <a href="http://www.persica.com/"><b>prada cyber monday</b></a> <a href="http://americabs.com/"><b>uggs cyber monday</b></a> <a href="http://www.ashlandculturalcouncil.org/"><b>lululemon cyber monday</b></a> <a href="http://bgcbg.org/"><b>Babyliss black Friday</b></a> <a href="http://www.harborcountryopera.org/"><b>uggs cyber monday</b></a> <a href="http://www.moudysbarandgrill.com/"><b>uggs black friday</b></a> <a href="http://www.mlcfc.com/"><b>Juicy Couture cyber monday</b></a> <a href="http://www.perignemcrossfit.com/"><b>Ray Ban black Friday</b></a> <a href="http://www.windworksstudio.com/"><b>black Friday beats by dre</b></a> <a href="http://www.christcars.com/"><b>beats by dre cyber Monday</b></a> <a href="http://www.exterapartners.com/"><b>north face cyber monday</b></a> <a href="http://www.kevinnovales.com/"><b>polo black friday</b></a> <a href="http://www.emsinnovations.com/"><b>louis vuitton black Friday</b></a> <a href="http://www.wolfrobotics.com/"><b>Ray Ban black Friday</b></a> <a href="http://www.adventurecarlsbadnm.com/"><b>uggs cyber monday</b></a> <a href="http://www.haverhillhistory.org/"><b>michael kors black Friday</b></a> <a href="http://bookforward.net/"><b>canada goose black friday</b></a> <a href="http://www.youthresourcebank.org/"><b>michael kors cyber Monday</b></a> <a href="http://www.nueve11music.com"><b>Uggs black friday</b></a> <a href="http://lakescountrytriathlon.com/"><b>michael kors black Friday</b></a> <a href="http://bvbhof.com/"><b>moncler black friday</b></a> <a href="http://www.thesafecenter.org/"><b>pandora cyber Monday</b></a> <a href="http://www.atlantafreethought.org"><b>moncler cyber monday</b></a> <a href="http://www.asimplewellness.com/"><b>uggs cyber monday</b></a> <a href="http://www.sbe14.com/"><b>beats by dre black Friday sale</b></a> <a href="http://www.mopac.com/"><b>uggs cyber monday</b></a> <a href="http://www.rcitech.com/"><b>Mulberry black friday</b></a> <a href="http://www.astrotes.info/"><b>coach cyber monday</b></a> <a href="http://jennchase.com/"><b>north face cyber monday</b></a> <a href="http://www.cr-pca.org/"><b>beats by dre cyber Monday</b></a> <a href="http://www.lec-rm.com/"><b>michael kors cyber Monday</b></a> <a href="http://www.stampvilla.com"><b>north face cyber Monday</b></a> <a href="http://bulbcycle.com/"><b>michael kors cyber Monday</b></a> <a href="http://www.wrstorage.com/"><b>uggs cyber monday</b></a> <a href="http://www.theberryhillgroup.com/"><b>uggs cyber monday</b></a> <a href="http://www.ingramsoil.com/"><b>uggs cyber monday</b></a> <a href="http://www.ingramsoil.com/"><b>uggs cyber monday</b></a> <a href="http://www.davidshieldgroup.com/"><b>uggs black friday</b></a> <a href="http://www.glangels.org/"><b>michael kors black Friday</b></a> <a href="http://canyonlawoffice.com/"><b>michael kors black Friday</b></a> <a href="http://www.wrstorage.com/"><b>uggs black friday</b></a> <a href="http://www.beautifulblossoms.net/"><b>michael kors black Friday</b></a> <a href="http://www.thegeorgi.com/"><b>uggs black friday</b></a> <a href="http://smcelder.com/"><b>north face black friday</b></a> <a href="http://www.robertkoke.com/"><b>beats by dre cyber Monday</b></a> <a hr

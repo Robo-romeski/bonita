@@ -1,0 +1,53 @@
+.navbar-brand { position: relative; z-index: 2; }
+
+.navbar-nav.navbar-right .btn { position: relative; z-index: 2; padding: 4px 20px; margin: 10px auto; }
+
+.navbar .navbar-collapse { position: relative; }
+.navbar .navbar-collapse .navbar-right > li:last-child { padding-left: 22px; }
+
+.navbar .nav-collapse { position: absolute; z-index: 1; top: 0; left: 0; right: 0; bottom: 0; margin: 0; padding-right: 120px; padding-left: 80px; width: 100%; }
+.navbar.navbar-default .nav-collapse { background-color: #f8f8f8; }
+.navbar.navbar-inverse .nav-collapse { background-color: #222; }
+.navbar .nav-collapse .navbar-form { border-width: 0; box-shadow: none; }
+.nav-collapse>li { float: right; }
+
+.btn.btn-circle { 
+	border-radius: 50px; 
+	margin-top: 2%;
+	color: #d3165e;
+
+}
+.btn.btn-outline { background-color: transparent; }
+
+@media screen and (max-width: 767px) {
+    .navbar .navbar-collapse .navbar-right > li:last-child { padding-left: 15px; padding-right: 15px; } 
+    
+    .navbar .nav-collapse { margin: 7.5px auto; padding: 0; }
+    .navbar .nav-collapse .navbar-form { margin: 0; }
+    .nav-collapse>li { float: none; }
+}
+.btn{
+	border: none;
+}
+.btn-primary.raised {
+	box-shadow: 0 3px 0 0 #ffffff;
+	color: #ffffff;
+	background-color: #d3165e;
+	
+}
+
+.btn-primary.raised:active, .btn-primary.raised.active {
+	background: #d3165e;
+	box-shadow: none;
+	margin-bottom: -3px;
+	margin-top: 3px;
+}
+
+.btn-primary.outline:hover, .btn-primary.outline:focus, .btn-primary.outline:active, .btn-primary.outline.active, .open > .dropdown-toggle.btn-primary {
+	color: #33a6cc;
+	border-color: #33a6cc;
+}
+.btn-primary.outline:active, .btn-primary.outline.active {
+	border-color: #007299;
+	color: #007299;
+	box-shadow: none;

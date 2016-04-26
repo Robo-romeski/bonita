@@ -1,0 +1,401 @@
+@import url('http://fonts.googleapis.com/css?family=Englebert');
+@import url('http://fonts.googleapis.com/css?family=Sonsie+One');
+@import url('http://fonts.googleapis.com/css?family=Arbutus');
+@import url('http://fonts.googleapis.com/css?family=Rammetto+One');
+
+html,body {
+  height: 100%;
+  margin: 0;
+
+}
+.navbar-inverse{
+  background: rgba(0, 0, 0, 0.5);
+}
+h1, h2, { font-family: 'Englebert', sans-serif; font-weight: 400; }
+p, h2, h4{
+  color:white;
+}
+p .span{
+
+  font-color:#d3165e;
+}
+.linkup{
+  padding-right: 5%;
+  font-family: 'Rammetto One', cursive; font-weight:100;
+
+}
+.wavectrl{
+  height: 0;
+}
+.buttongrp{
+    display: inline-block;
+    /* padding-bottom: 0px; */
+    vertical-align: top;
+    padding: 1%;
+
+}
+
+/* wrapper for page content to push down footer */
+.page-container {
+      position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    overflow: auto;
+/*  min-height: 85%;
+  height: auto !important;
+  height: 100%;
+
+  margin: 0 auto -12rem;
+ 
+  padding: 0 0 -12rem;
+  overflow: hidden;*/
+}
+#waveform{
+  height:25px;
+  width: 40%;
+  display: inline-block;
+  float: none;
+}
+
+#waveform  canvas{
+  height: 75px;
+}
+/* set the fixed height of the footer here */
+#footer {
+  font-family: 'Rammetto One', cursive; font-weight:100;
+  font-size: 70%;
+  color: white;
+  /*background: -webkit-linear-gradient(left, rgba(211,22,94,0.3), rgba(211,22,94,1)); 
+  background: -o-linear-gradient(right, rgba(211,22,94,0.3), rgba(211,22,94,1)); 
+  background: -moz-linear-gradient(right, rgba(211,22,94,0.3), rgba(211,22,94,1)); 
+  background: linear-gradient(to right, rgba(211,22,94,0.3), rgba(211,22,94,1)); */
+  background-color:transparent;
+  border:0 solid #080808;
+  border-top-width: 0px;
+  margin-top:50px;
+  position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+    margin-bottom: 6rem;
+}
+
+/*#footer > .container {
+  padding: 20px;
+}*/
+
+#footer a{
+  color:rgba(211,22,94,0.7);
+  
+}
+
+#footer a:hover {
+  color:#cccccc;
+  margin-left:-2px;
+  text-decoration:none;
+}
+
+body {
+  padding-top: 0px; 
+  /*background: #1E1E1E url('http://www.justbonita.com/bonitasite.jpg') no-repeat center 5px fixed;*/
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+body h1
+{
+  color: #d3165e;
+}
+a {
+  font-color:#efefef;
+}
+.text-center {
+  padding-top: 20px;
+}
+
+#sidebar {
+  height: 100%;
+  padding-right: 0;
+  padding-top: 20px;
+}
+
+#sidebar .affix {
+  position:fixed;
+  top:55;
+  width:220px;
+}
+
+#sidebar .affix-bottom {
+  position:fixed;
+  top:55;
+  width:220px;
+}
+
+#sidebar .nav {
+  width: 95%;
+
+}
+#sidebar li {
+  border:0 #1e1e1e solid;
+  border-bottom-width:1px;
+}
+#sidebar li a {
+
+  padding-left:1px;
+}
+#sidebar li a:hover {
+  background-color:#222222;
+  color:#ffffff;
+}
+
+/* collapsed sidebar styles */
+@media screen and (max-width: 767px) {
+  .row-offcanvas {
+    position: relative;
+    -webkit-transition: all 10.75s ease-out;
+    -moz-transition: all 10.75s ease-out;
+    transition: all 10.75s ease-out;
+  }
+  .row-offcanvas-right
+  .sidebar-offcanvas {
+    right: -41.6%;
+  }
+
+  .row-offcanvas-left
+  .sidebar-offcanvas {
+    left: -41.6%;
+  }
+  .row-offcanvas-right.active {
+    right: 41.6%;
+  }
+  .row-offcanvas-left.active {
+    left: 41.6%;
+  }
+  .sidebar-offcanvas {
+    position: absolute;
+    top: 0;
+    width: 41.6%;
+  }
+  #sidebar {
+    background-color:#3b3b3b;
+    padding-top:0;
+  }
+  #sidebar .nav>li {
+    color: #ddd;
+    background: linear-gradient(#3E3E3E, #383838);
+    border-top: 1px solid #484848;
+    border-bottom: 1px solid #2E2E2E;
+    padding-left:10px;
+  }
+  #sidebar .nav>li:first-child {
+    border-top:0;
+  }
+  #sidebar .nav>li>a {
+    color: #ddd;
+  }
+  #sidebar .nav>li>a>img {
+    max-width: 14px;
+  }
+  #sidebar .nav>li>a:hover, #sidebar .nav>li>a:focus {
+    text-decoration: none;
+    background: linear-gradient(#373737, #323232);
+    color: #fff;  
+  }
+  #sidebar .nav .caret {
+    border-top-color: #fff;
+    border-bottom-color: #fff;
+  }
+  #sidebar .nav a:hover .caret{
+    border-top-color: #fff;
+    border-bottom-color: #fff;
+  }
+}
+
+#bonita-rollout{
+  display: none;
+  transition:width 20s;
+-webkit-transition:width 20s; /* Safari */
+}
+
+#bonita-rollout-outer{
+  font-family: 'Arbutus', cursive;
+  float: right;
+  display: block;
+  width: 100px;
+  height: 200px;
+padding-top: 50px;
+margin-left: -100px;
+  transition:width 1s;
+-webkit-transition:width 1s; /* Safari */
+}
+#bonita-rollout-outer:hover{
+  width: 25%;
+padding-left: 100px;
+}
+#bonita-rollout-outer:hover #bonita-rollout{
+  width: 100%;
+  display: block;
+}
+#main, #section1, #section2, #section3, #section4, .section{
+background-color:rgba(0,0,0,0.6); 
+padding-top:30px; 
+display:none;
+}
+#main{
+  display:block;
+}
+.boxdown{
+padding-top: 50px;
+/*display: none;*/
+}
+#scrolltop {
+  background-color: #d3165e !important;
+  font-family: 'Sonsie One', cursive; font-weight: 600;
+  color:#FFF;
+  color:rgba(255, 255, 255, 0.7);
+  font-size:12px;
+  border-radius: 2px;
+  border: 0;
+  outline: 0;
+    left: 0;
+  bottom: 50px;
+  height: 50px;
+  position: fixed;
+  z-index:9999;
+}
+#sideslidemenu {
+  background-color: #ffffff transparent !important;
+  text-align: center;
+  
+  color:#000000;
+  color:rgba(255, 255, 255, 0.8);
+  font-size:20px;
+  border-radius: 2px;
+  border: 0;
+  outline: 0;
+  left: 10px;
+  top: 75px;
+  height: 50px;
+  position: fixed;
+  z-index:0;
+}
+.sideslidemenu a{
+  color: #d3165e;
+}
+#slideslidemenu:hover{
+color:#cccccc;
+  color:rgba(255, 255, 255, 0.2);
+
+}
+#openmenu{
+ background-color: #d3165e !important;
+  font-family: 'Sonsie One', cursive; font-weight: 600;
+  color:#FFF;
+  color:rgba(255, 255, 255, 0.7);
+  font-size:12px;
+  border-radius: 2px;
+  border: 0;
+  outline: 0;
+    left: 0;
+  top: 50px;
+  height: 50px;
+  position: fixed;
+  z-index:9999;
+
+}
+
+#scrolltop:hover {
+opacity: 1.0;
+}
+.scrolltop{
+ display: none;
+}
+
+#load {
+  display: none;
+  position: absolute;
+  right: 10px;
+  top: 200px;
+  background:#000000 url('images/bonita-loader.gif');
+  width: 43px;
+  height: 11px;
+  text-indent: -9999em;
+}
+.html-marquee {
+  height:200px;
+  width:1100px;
+  background-color:000000;
+  background-image:url('images/bonita-loader.gif');
+  font-family:Cursive;
+  font-size:16px;color:000000;
+  font-weight:bold;border-width:1;
+  border-style:dotted;
+  border-color:FFFFFF;
+}
+
+video#bgvid {
+position: relative; 
+right: 0; bottom: 0;
+min-width: 100%; min-height: 100%;
+width: 100%; height: auto;
+background: url('') no-repeat;
+background-size: inherit;
+z-index:0;
+}
+.fa.fa-bars{
+
+font-size:40px;
+color: #d3165e;
+}
+.btn-default{
+  background-color: #000000;
+  
+}
+
+#bonita-rollout-outer:hover .btn-default{
+  opacity: 0;
+
+
+}
+a:visited, button:visited{
+  color: #d3165e;
+}
+.btn:focus,.btn:active {
+   outline: none !important;
+}
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px; height: 0; overflow: hidden;
+}
+ 
+.video-container iframe,
+.video-container object,
+.video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px; height: 0; overflow: hidden;
+}
+ 
+.video-container iframe,
+.video-container object,
+.video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
