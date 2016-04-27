@@ -26,7 +26,7 @@
     .navbar .nav-collapse .navbar-form { margin: 0; }
     .nav-collapse>li { float: none; }
 }
-.btn{
+.btn-play{
 	border: none;
 	background-color: transparent;
 }
