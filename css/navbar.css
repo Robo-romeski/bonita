@@ -28,6 +28,7 @@
 }
 .btn{
 	border: none;
+	background-color: transparent;
 }
 .btn-primary.raised {
 	box-shadow: 0 3px 0 0 #ffffff;
@@ -44,10 +45,37 @@
 }
 
 .btn-primary.outline:hover, .btn-primary.outline:focus, .btn-primary.outline:active, .btn-primary.outline.active, .open > .dropdown-toggle.btn-primary {
-	color: #33a6cc;
+	color: #d3165e;
 	border-color: #33a6cc;
+	background-color: transparent;
 }
 .btn-primary.outline:active, .btn-primary.outline.active {
-	border-color: #007299;
-	color: #007299;
+	border-color: #d3165e;
+	color: white;
 	box-shadow: none;
+	background-color: transparent;
+}
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width : 480px) {
+
+}
+
+/* Custom, iPhone Retina */ 
+@media only screen and (max-width : 320px) {
+
+}
