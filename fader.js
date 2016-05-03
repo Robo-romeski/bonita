@@ -31,7 +31,7 @@ $(document).ready(function() {
 		
 		$('#wrapper').append('<span id="load">LOADING...</span>');
 		$('#load').fadeIn('slow');
-			$('#' + presentPg).show('drop',hideLoader());
+			$('#' + presentPg).show('drop', {direction:'up'},hideLoader());
 			
 
 		}
