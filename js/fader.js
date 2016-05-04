@@ -9,14 +9,14 @@ $(document).ready(function() {
 		var presentPg = $(this).attr("rel");	
 		console.log(presentPg);
 
-		$("#" + currentPg).hide('drop',{direction:'up'},showNewContent).removeClass('focus');
+		$("#" + currentPg).hide('drop',{direction:'up'},showNewContent).removeClass('focused');
 		
 		function showNewContent() {
 			$('#load').remove();
 		
 		$('#wrapper').append('<span id="load">LOADING...</span>');
 		$('#load').fadeIn('slow');
-			$('#' + presentPg).fadeIn().addClass('focus');
+			$('#' + presentPg).fadeIn().addClass('focused');
 			$('#footer').hide();
 			
 

@@ -274,7 +274,7 @@ padding-left: 100px;
    background: rgba(211, 22, 94, 0.8);
   width: 100%;
   height:100%;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
 padding-top:5%; 
@@ -438,23 +438,27 @@ hr{
     border-top: 1px solid rgba(0,0,0,0.0);
 }
 .inner{
-  overflow-y: scroll;
   overflow-x: hidden;
-  margin: 0 auto;
+  margin-top: 5rem;
 }
 }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
 .inner{
-  overflow-y: scroll;
   overflow-x:hidden;
   background: transparent;
-  height: 45rem;
+  margin-bottom: 3rem;
+
 
 }
 #main, #section1, #section2, #section3, #section4, .section{
   background: transparent;
+}
+.focused{
+  margin-top: 5rem;
+  padding-top: 1rem;
+  overflow: scroll;
 }
 }
 
@@ -476,7 +480,10 @@ left: 30rem;
 top: 40rem;
 position: fixed;
 }
-
+.focused{
+  margin-top: 1rem;
+  padding-top: 1rem;
+}
 #main, #section1, #section2, #section3, #section4, .section{
   background: transparent;
   position: fixed;
