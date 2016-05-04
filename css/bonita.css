@@ -8,6 +8,10 @@ html,body {
   margin: 0;
 
 }
+.fully{
+  padding-left: 0;
+  margin-left: 0;
+}
 .navbar-inverse{
   background: rgba(0, 0, 0, 0.5);
 }
@@ -98,7 +102,16 @@ p .span{
   margin-left:-2px;
   text-decoration:none;
 }
+#bonita-rollout-outer a:hover{
+    color:#cccccc;
+  margin-left:-2px;
+  text-decoration:none;
+}
 
+.inner{
+      background: rgba(255,255,255,0.4);
+    margin-top: 10rem;
+}
 body {
   padding-top: 0px; 
   /*background: #1E1E1E url('http://www.justbonita.com/bonitasite.jpg') no-repeat center 5px fixed;*/
@@ -274,6 +287,7 @@ display:none;
   position: absolute;
   top: 15px;
   right: 15px;
+  cursor: pointer;
 
 }
 #main{
@@ -375,18 +389,9 @@ a:visited, button:visited{
 @media only screen and (min-width : 1200px) {
 
 }
-@media only screen and (min-width : 992px) and (max-width: 1199px){
-#bonita-rollout{
-  display: block;
-  transition:width 20s;
--webkit-transition:width 20s; /* Safari */
-}
-.breathe{
-  
-}
-#footer{
-  display: none;
-}
+@media only screen and (max-width: 1199px){
+
+
 /*#main, #section1, #section2, #section3, #section4, .section{
 background-color:rgba(0,0,0,0.6); 
 width: 85%;
@@ -395,25 +400,92 @@ display:none;
 .container{
   margin-right: 0;
 }
-
+  .wavectrl{
+  background-color: #d3165e !important;
+  font-family: 'Sonsie One', cursive; font-weight: 600;
+  color:#FFF;
+  color:rgba(255, 255, 255, 0.7);
+  font-size:12px;
+  border-radius: 2px;
+  border: 0;
+  outline: 0;
+    left: 2rem;
+  bottom: 14rem;
+  position: fixed;
+  z-index:9999;
+}
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 990px) {
-
+  .wavectrl{
+  background-color: #d3165e !important;
+  font-family: 'Sonsie One', cursive; font-weight: 600;
+  color:#FFF;
+  color:rgba(255, 255, 255, 0.7);
+  font-size:12px;
+  border-radius: 2px;
+  border: 0;
+  outline: 0;
+    left: 2rem;
+  bottom: 14rem;
+  position: fixed;
+  z-index:9999;
+}
+hr{
+    border-top: 1px solid rgba(0,0,0,0.0);
+}
+.inner{
+  overflow-y: scroll;
+  overflow-x: hidden;
+  margin: 0 auto;
+}
 }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
-
+.inner{
+  overflow: scroll;
+  background: transparent;
+}
+#main, #section1, #section2, #section3, #section4, .section{
+  background: transparent;
+}
 }
 
 /* Extra Small Devices, Phones */ 
-@media only screen and (max-width : 480px) {
-
+@media only screen and (min-width : 321px) and (max-width : 480px) {
+hr{
+    border-top: 1px solid rgba(0,0,0,0.0);
+}
+.focus{
+  overflow: scroll;
+  background: transparent;
+}
+#footer{
+  display: none;
+}
+#bonita-rollout{
+  display: block;
+left: 30rem;
+top: 40rem;
+position: fixed;
+}
+.focus{
+  overflow: scroll;
+}
+#main, #section1, #section2, #section3, #section4, .section{
+  background: transparent;
+  position: fixed;
+  margin-top: 4rem;
+}
 }
 
 /* Custom, iPhone Retina */ 
 @media only screen and (max-width : 320px) {
+hr{
+    border-top: 1px solid rgba(0,0,0,0.0);
+}
+
 
 }

@@ -92,7 +92,7 @@
         <!-- main area -->
         <div class="col-lg-12 content" id="main">
         <div class="closeDiv"><h2>X</h2></div>
-        <div class="container">
+        <div class="container inner">
   <h1>The Bonita Who Experience!!</h1>
 
 <h2>** What's Goin' on Ya'll?!? **</h2>
@@ -103,7 +103,7 @@
 
         <div class="col-lg-12 content" id="section1">
         <div class="closeDiv"><h2>X</h2></div>
-        <div class="container">
+        <div class="container inner">
           <h1 id="tion1">Welcome to BonitaWho!</h1>
           <p>In this generation, artists are striving to come up with a quick hit record or jump on the bandwagon of the next hottest trend. So how can an emerging Hip-Hop/R&B artist break ground? By using her creative and musical gifts, songstress Bonita has stepped into the game slinging a sledgehammer– and she’s doing so on some uncharted territory. </p>
           <p>This “sweet” but “street” Brooklyn native is putting the heart and soul back into Hip-Hop; producing original songs that feature classic beats and thought- provoking lyrics. With a distinct sound, this seasoned artist is making a name for herself as the most versatile female R&B/Hip-Hop artist that the industry has seen to date; She proves this on her first single, “Outta this World” featuring Mickey Factz, and will continue to prove she deserves a position in the music industry when she releases her first EP. </p>
@@ -117,11 +117,13 @@
 
         <div class="col-lg-12 content gram" id="section2">
         <div class="closeDiv"><h2>X</h2></div>
-        <div class="container">
-    <div id="instafeed" class="instafeed"></div>
-<h1>Pics, Videos, Music, and More!!</h1>
-<p>Hey Ya'll; you finally made it!! <i class="fa fa-smile-o"></i> Chill out, relax, and take a look at some of the work I am doing. All videos, pics, and music created with <i class="fa fa-heart"></i> #bonitawho </p>
-</div><!--ends media section--></div>
+        <div class="container fully">
+        <div class="row">
+    <div id="instafeed" class="instafeed col-md-3"></div>
+    <div class="col-md-9">
+<h2>Pics, Videos, Music, and More!!</h2>
+<p>Hey Ya'll; you finally made it!! <i class="fa fa-smile-o"></i> Chill out, relax, and take a look at some of the work I am doing. All videos, pics, and music created with <i class="fa fa-heart"></i> #bonitawho </p></div>
+</div><!--ends media section--></div></div>
 
 <div class="col-lg-12 content gram" id="section3">
   <div class="closeDiv"><h2>X</h2></div>
@@ -130,7 +132,7 @@
 
  <div class="col-lg-12 content" id="section4">
   <div class="closeDiv"><h2>X</h2></div>
-  <div class="container">
+  <div class="container inner">
  <div class="panel-heading">
             <h1>Contact Form</h1>
           </div>
@@ -225,13 +227,17 @@
         target: 'instafeed',
         after: function (){
           $('.instafeed').slick({
+            vertical: true,
             slidesToShow: 4,
-            infinite: false,
+            infinite: true,
             slidesToScroll: 3,
             showDots: true,
             autoplay: true,
             speed: 4000,
-            autoplaySpeed: 0
+            autoplaySpeed: 100,
+            dots: false,
+            prevArrow: false,
+            nextArrow: false
           })
         }
         
@@ -243,11 +249,16 @@
         
         <script type='text/javascript'>
 $(document).ready(function(){
+  
+
   $('.closeDiv').on('click', function() {
+    var windowSize = $(window).width();
     console.log(this);
   $(this).parent().fadeOut();
   console.log("close div");
+  if(windowSize > 480){
   $('#footer').show();
+}
   });
 
 });
