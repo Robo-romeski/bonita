@@ -110,7 +110,7 @@ p .span{
 
 .inner{
       background: rgba(255,255,255,0.4);
-    margin-top: 10rem;
+    
 }
 body {
   padding-top: 0px; 
@@ -445,8 +445,11 @@ hr{
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
 .inner{
-  overflow: scroll;
+  overflow-y: scroll;
+  overflow-x:hidden;
   background: transparent;
+  height: 45rem;
+
 }
 #main, #section1, #section2, #section3, #section4, .section{
   background: transparent;
@@ -458,7 +461,7 @@ hr{
 hr{
     border-top: 1px solid rgba(0,0,0,0.0);
 }
-.focus{
+.inner{
   overflow: scroll;
   background: transparent;
 }
@@ -471,9 +474,7 @@ left: 30rem;
 top: 40rem;
 position: fixed;
 }
-.focus{
-  overflow: scroll;
-}
+
 #main, #section1, #section2, #section3, #section4, .section{
   background: transparent;
   position: fixed;
