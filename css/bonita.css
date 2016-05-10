@@ -28,8 +28,18 @@ p .span{
   font-family: 'Rammetto One', cursive; font-weight:100;
 
 }
-.wavectrl{
-  height: 0;
+  .wavectrl{
+  font-family: 'Sonsie One', cursive; font-weight: 600;
+  color:#FFF;
+  color:rgba(255, 255, 255, 0.7);
+  font-size:12px;
+  border-radius: 2px;
+  border: 0;
+  outline: 0;
+    left: 4rem;
+  bottom: 2rem;
+  position: fixed;
+  z-index:9999;
 }
 .buttongrp{
     display: inline-block;
@@ -110,6 +120,7 @@ p .span{
 
 .inner{
       background: rgba(255,255,255,0.4);
+      border-radius: 20px;
     
 }
 body {
@@ -403,7 +414,6 @@ display:none;
   margin-right: 0;
 }
   .wavectrl{
-  background-color: #d3165e !important;
   font-family: 'Sonsie One', cursive; font-weight: 600;
   color:#FFF;
   color:rgba(255, 255, 255, 0.7);
@@ -412,7 +422,7 @@ display:none;
   border: 0;
   outline: 0;
     left: 2rem;
-  bottom: 14rem;
+  bottom: 2rem;
   position: fixed;
   z-index:9999;
 }
@@ -421,7 +431,7 @@ display:none;
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 990px) {
   .wavectrl{
-  background-color: #d3165e !important;
+  
   font-family: 'Sonsie One', cursive; font-weight: 600;
   color:#FFF;
   color:rgba(255, 255, 255, 0.7);
@@ -430,7 +440,7 @@ display:none;
   border: 0;
   outline: 0;
     left: 2rem;
-  bottom: 14rem;
+  bottom: 2rem;
   position: fixed;
   z-index:9999;
 }
@@ -449,9 +459,8 @@ hr{
   overflow-x:hidden;
   background: transparent;
   margin-bottom: 3rem;
-
-
 }
+
 #main, #section1, #section2, #section3, #section4, .section{
   background: transparent;
 }
@@ -459,6 +468,15 @@ hr{
   margin-top: 5rem;
   padding-top: 1rem;
   overflow: scroll;
+}
+#bonita-rollout{
+  display: block;
+left: 40rem;
+top: 35rem;
+position: inherit;
+}
+.list-inline{
+  display: none;
 }
 }
 
@@ -472,13 +490,12 @@ hr{
   background: transparent;
 }
 #footer{
-  display: none;
 }
 #bonita-rollout{
   display: block;
 left: 30rem;
-top: 40rem;
-position: fixed;
+top: 35rem;
+position: inherit;
 }
 .focused{
   margin-top: 1rem;
@@ -488,6 +505,26 @@ position: fixed;
   background: transparent;
   position: fixed;
   margin-top: 4rem;
+}
+.navbar-toggle{
+display: none;
+}
+
+  .wavectrl{
+  font-family: 'Sonsie One', cursive; font-weight: 600;
+  color:#FFF;
+  color:rgba(255, 255, 255, 0.7);
+  font-size:12px;
+  border-radius: 2px;
+  border: 0;
+  outline: 0;
+    left: 4rem;
+  bottom: 60rem;
+  position: fixed;
+  z-index:9999;
+}
+.list-inline{
+  display: none;
 }
 }
 
