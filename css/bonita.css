@@ -470,8 +470,9 @@ hr{
 @media only screen and (max-width : 768px) {
 .inner{
   overflow-x:hidden;
-  background: transparent;
+  background: black;
   margin-bottom: 3rem;
+  z-index: 99;
 }
 
 #main, #section1, #section2, #section3, #section4, .section{
@@ -491,6 +492,8 @@ position: inherit;
 .list-inline{
   display: none;
 }
+.wavectrl{}
+
 }
 
 /* Extra Small Devices, Phones */ 

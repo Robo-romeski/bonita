@@ -48,7 +48,7 @@
   <!-- Collect the nav links, forms, and other content for toggling -->
   <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">  
       
-    <ul class="nav navbar-nav navbar-right linkup" id="sidebar-nav">
+    <ul class="nav navbar-nav navbar-right linkup mini-menu" id="sidebar-nav">
               <li><a rel="main" class="activeBonita" href="#main">Home</a></li> 
               <li><a rel="section1" href="#section1">Bio</a></li>
               <li><a rel="section2" href="#section2">Media</a></li>
@@ -145,7 +145,7 @@
 </div>
 
 <div class="media">
-  <a class="pull-left" <a href="http://www.justbonita.com/awkward/videos.html" target="_blank">
+  <a class="pull-left" href="http://www.justbonita.com/awkward/videos.html" target="_blank">
     <img class="media-object" src="images/bonita/boutit.jpg" width="64px" height="64px" alt="...">
   </a>
   <div class="media-body">
@@ -155,7 +155,7 @@
 </div>
 
 <div class="media">
-  <a class="pull-left" <a href="http://www.justbonita.com/imageslideshow/slideshow.html" target="_blank">
+  <a class="pull-left" href="http://www.justbonita.com/imageslideshow/slideshow.html" target="_blank">
     <img class="media-object" src="images/bonita/boutit.jpg" width="64px" height="64px" alt="...">
   </a>
   <div class="media-body">
@@ -302,13 +302,14 @@ $(document).ready(function(){
 
   $('.closeDiv').on('click', function() {
     var windowSize = $(window).width();
-    console.log(this);
   $(this).parent().fadeOut();
-  console.log("close div");
   if(windowSize > 480){
   $('#footer').show();
 }
   });
+  $('.navbar-collapse ul li a').click(function(){ 
+            $('.navbar-toggle:visible').click();
+    });
 
 });
         </script>

@@ -67,7 +67,15 @@
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
+.navbar .navbar-collapse { 
+    position: absolute;
+    top: 30px;
+    left: 65%;
+    border-radius: 20px;
+    background-color: rgba(211,22,94,0.3);
+    z-index: 100;
 
+}
 }
 
 /* Extra Small Devices, Phones */ 
