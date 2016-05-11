@@ -65,7 +65,7 @@
       <i class="glyphicon glyphicon-pause"></i>/
     <i class="glyphicon glyphicon-play"></i>
     
-  </button><br><a href="https://itun.es/us/CbIy_?i=1063395711" target="_blank">Download on iTunes</a></div></div>
+  </button><br><a href="https://itun.es/us/CbIy_?i=1063395711" target="_blank">Download</a></div></div>
 
     <div class="container boxdown" id="boxdown">
       <div class="row row-offcanvas row-offcanvas-left">
@@ -272,7 +272,7 @@
         userId: '26897616',
         clientId: '712ffcef7bdc4c08bad87e4427553541',
         accessToken: '26897616.1677ed0.f01b340553fd46229f77975cda6829aa',
-        template: '<div class="row"><div class="col-lg-8 col-sm-offset-2"><img class="img-circle" src="{{image}}"><h3><i class="fa fa-heart"></i> {{likes}} , <i class="fa fa-comments"></i> {{comments}}</h3></div></div>',
+        template: '<div class="row"><div class="col-lg-8 col-sm-offset-2"><a href="{{link}}" target="_blank"><img class="img-circle" src="{{image}}"></a><h3><i class="fa fa-heart"></i> {{likes}} , <i class="fa fa-comments"></i> {{comments}}</h3></div></div>',
         target: 'instafeed',
         after: function (){
           $('.instafeed').slick({
@@ -282,7 +282,7 @@
             slidesToScroll: 3,
             showDots: true,
             autoplay: true,
-            speed: 4000,
+            speed: 6000,
             autoplaySpeed: 300,
             dots: false,
             prevArrow: false,
@@ -303,12 +303,13 @@ $(document).ready(function(){
   $('.closeDiv').on('click', function() {
     var windowSize = $(window).width();
   $(this).parent().fadeOut();
-  if(windowSize > 480){
   $('#footer').show();
-}
+  $('.wavectrl').show();
+
   });
   $('.navbar-collapse ul li a').click(function(){ 
             $('.navbar-toggle:visible').click();
+            $('.wavectrl').hide();
     });
 
 });

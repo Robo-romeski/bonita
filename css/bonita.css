@@ -39,7 +39,7 @@ p .span{
     left: 4rem;
   bottom: 2rem;
   position: fixed;
-  z-index:9999;
+
 }
 .buttongrp{
     display: inline-block;
@@ -327,7 +327,7 @@ padding-top: 50px;
   bottom: 50px;
   height: 50px;
   position: fixed;
-  z-index:9999;
+
 }
 #sideslidemenu {
   background-color: #ffffff transparent !important;
@@ -366,7 +366,7 @@ color:#cccccc;
   top: 50px;
   height: 50px;
   position: fixed;
-  z-index:9999;
+
 
 }
 
@@ -464,16 +464,24 @@ hr{
 .fully{
   width: 100%;
 }
+.navbar-inverse{
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  }
 }
 
 /* Small Devices, Tablets */
-@media only screen and (max-width : 768px) {
+@media only screen and (max-width : 767px) {
 .inner{
   overflow-x:hidden;
   background: black;
-  margin-bottom: 3rem;
-  z-index: 99;
+  margin-bottom: 10rem;
+
 }
+.navbar-inverse{
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  }
 
 #main, #section1, #section2, #section3, #section4, .section{
   background: transparent;
@@ -483,15 +491,13 @@ hr{
   padding-top: 1rem;
   overflow: scroll;
 }
-#bonita-rollout{
+/*#bonita-rollout{
   display: block;
 left: 40rem;
 top: 35rem;
 position: inherit;
-}
-.list-inline{
-  display: none;
-}
+}*/
+
 .wavectrl{}
 
 }
@@ -501,17 +507,15 @@ position: inherit;
 hr{
     border-top: 1px solid rgba(0,0,0,0.0);
 }
+.navbar-inverse{
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  }
 .inner{
   overflow: scroll;
   background: transparent;
 }
 #footer{
-}
-#bonita-rollout{
-  display: block;
-left: 30rem;
-top: 35rem;
-position: inherit;
 }
 .focused{
   margin-top: 1rem;
@@ -533,12 +537,8 @@ display: none;
   border: 0;
   outline: 0;
     left: 4rem;
-  bottom: 60rem;
+  bottom: 30rem;
   position: fixed;
-  z-index:9999;
-}
-.list-inline{
-  display: none;
 }
 }
 
@@ -550,6 +550,9 @@ hr{
 #main, #section1, #section2, #section3, #section4, .section{
   display: none;
 }
-
+.navbar-inverse{
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
 
 }
