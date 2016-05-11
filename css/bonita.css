@@ -39,6 +39,7 @@ p .span{
     left: 4rem;
   bottom: 2rem;
   position: fixed;
+  z-index: 5;
 
 }
 .buttongrp{
