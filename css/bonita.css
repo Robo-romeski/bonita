@@ -2,6 +2,7 @@
 @import url('http://fonts.googleapis.com/css?family=Sonsie+One');
 @import url('http://fonts.googleapis.com/css?family=Arbutus');
 @import url('http://fonts.googleapis.com/css?family=Rammetto+One');
+@import url('https://fonts.googleapis.com/css?family=Stalemate');
 
 html,body {
   height: 100%;
@@ -11,6 +12,15 @@ html,body {
 .fully{
   padding-left: 0;
   margin-left: 0;
+}
+a#button.navbar-brand span{
+font-family: 'Stalemate', cursive;
+font-size: 6rem;
+color: rgba(211,22,94,1);
+
+}
+.navbar-header{
+  padding-top: 1rem;
 }
 .navbar-inverse{
   background: rgba(0, 0, 0, 0.5);

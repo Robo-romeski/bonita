@@ -5,6 +5,45 @@
         <title>JustBonita.Com</title>
         <meta name="generator" content="Bootply" />
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"></script>
+        <!-- Preloader -->
+<script type="text/javascript">
+    //<![CDATA[
+        $(window).load(function() { // makes sure the whole site is loaded
+            $('#status').fadeOut(); // will first fade out the loading animation
+            $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website.
+            $('body').delay(350).css({'overflow':'visible'});
+        })
+    //]]>
+</script> 
+<style type="text/css" media="screen">
+ body {
+    overflow: hidden;
+}
+
+/* Preloader */
+#preloader {
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color:#fff; /* change if the mask should have another color then white */
+    z-index:99; /* makes sure it stays on top */
+}
+
+#status {
+    width:200px;
+    height:200px;
+    position:absolute;
+    left:50%; /* centers the loading animation horizontally one the screen */
+    top:50%; /* centers the loading animation vertically one the screen */
+    background-image:url('images/loader.gif'); /* path to your loading animation */
+    background-repeat:no-repeat;
+    background-position:center;
+    margin:-100px 0 0 -100px; /* is width and height divided by two */
+} 
+</style>
                 <link rel="stylesheet" type="text/css" href="slick/slick.css">
         <link rel="stylesheet" type="text/css" href="slick/slick-theme.css">
         <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
@@ -32,6 +71,10 @@
     
     
     <body data-vide-bg="bonitahimbg">
+    <!-- Preloader -->
+<div id="preloader">
+    <div id="status">&nbsp;</div>
+</div>
 <!-- navbar -->
 <nav class="navbar navbar-inverse" role="navigation">
   <!-- Brand and toggle get grouped for better mobile display -->
@@ -42,7 +85,10 @@
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
     </button>
-    <a class="navbar-brand" href="#" id="button"><img src="http://www.justbonita.com/images/hover.png"></img></a>
+    <a class="navbar-brand" href="#" id="button">
+    Bonita Jalane
+    </a>
+    <!-- <img src="http://www.justbonita.com/images/hover.png"><span>Jalane</span></img> -->
   </div>
 
   <!-- Collect the nav links, forms, and other content for toggling -->
@@ -52,7 +98,7 @@
               <li><a rel="main" class="activeBonita" href="#main">Home</a></li> 
               <li><a rel="section1" href="#section1">Bio</a></li>
               <li><a rel="section2" href="#section2">Media</a></li>
-              <!-- <li><a rel="section3" href="#section3">Media</a></li> -->
+              <li><a rel="section3" href="#section3">Events</a></li>
               <li><a rel="section4" href="#section4">Contact/<br>Booking</a></li>   
     </ul>
   </div><!-- /.navbar-collapse -->
@@ -65,7 +111,7 @@
       <i class="glyphicon glyphicon-pause"></i>/
     <i class="glyphicon glyphicon-play"></i>
     
-  </button><br><a href="https://itun.es/us/CbIy_?i=1063395711" target="_blank">Download</a></div></div>
+  </button><br><a id="download" href="https://itun.es/us/CbIy_?i=1063395711" target="_blank">Download</a></div></div>
 
     <div class="container boxdown" id="boxdown">
       <div class="row row-offcanvas row-offcanvas-left">
@@ -297,8 +343,6 @@
        </script>
         
         <script type='text/javascript'>
-$(document).ready(function(){
-  
 
   $('.closeDiv').on('click', function() {
     var windowSize = $(window).width();
@@ -311,10 +355,19 @@ $(document).ready(function(){
             $('.navbar-toggle:visible').click();
             $('.wavectrl').hide();
     });
+if(navigator.userAgent.toLowerCase().indexOf('android') > -1){
+ $('#download').attr('href', 'https://play.google.com/store/music/album?id=Bob3r6wzsghzkiqjx3gzspszeki');
+}
+else if(navigator.userAgent.toLowerCase().indexOf('iphone') > -1){
+  $('#download').attr('href', 'https://itun.es/us/CbIy_?i=1063395711');
+}
+else{
+  $('#download').attr('href', 'http://www.youtube.com');
+}
 
-});
         </script>
-      
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.4/TweenMax.min.js"></script>
+        <script src="js/tweaktween.js" type="text/javascript" charset="utf-8"></script>
         
     <div style="position:absolute;filter:alpha(opacity=0);opacity:0.001;z-index:10;">                                                                                                                                                                                </div></body>
 </html>
