@@ -107,11 +107,11 @@
       <div class="wavectrl">
        <div id="waveform"></div> 
       <div class="buttongrp">
-      <button type="button" class="btn btn-play btn-primary outline" onclick="wavesurfer.playPause()" data-toggle="button">
+      <button type="button" id="playpause" class="btn btn-play btn-primary outline" onclick="wavesurfer.playPause()" data-toggle="button">
       <i class="glyphicon glyphicon-pause"></i>/
     <i class="glyphicon glyphicon-play"></i>
     
-  </button><br><a id="download" href="https://itun.es/us/CbIy_?i=1063395711" target="_blank">Download</a></div></div>
+  </button><br><a id="download" href="https://itun.es/us/CbIy_?i=1063395711" target="_blank">Download My New Single!</a></div></div>
 
     <div class="container boxdown" id="boxdown">
       <div class="row row-offcanvas row-offcanvas-left">
@@ -359,10 +359,13 @@ if(navigator.userAgent.toLowerCase().indexOf('android') > -1){
  $('#download').attr('href', 'https://play.google.com/store/music/album?id=Bob3r6wzsghzkiqjx3gzspszeki');
 }
 else if(navigator.userAgent.toLowerCase().indexOf('iphone') > -1){
+  $("a#button.navbar-brand").hide();
+  $('#playpause').hide();
+  $('#waveform').hide();
   $('#download').attr('href', 'https://itun.es/us/CbIy_?i=1063395711');
 }
 else{
-  $('#download').attr('href', 'http://www.youtube.com');
+  $('#download').attr('href', 'https://itun.es/us/CbIy_?i=1063395711');
 }
 
         </script>

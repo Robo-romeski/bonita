@@ -512,7 +512,9 @@ position: inherit;
 .wavectrl{}
 
 }
-
+a:link{
+  color: white;
+}
 /* Extra Small Devices, Phones */ 
 @media only screen and (min-width : 321px) and (max-width : 480px) {
 hr{
@@ -564,6 +566,9 @@ hr{
 .navbar-inverse{
   background: rgba(0, 0, 0, 0.5);
   z-index: 1;
+}
+.wavectrl{
+  margin-bottom: 5rem;
 }
 
 }
