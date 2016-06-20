@@ -79,7 +79,7 @@ p .span{
   overflow: hidden;*/
 }
 #waveform{
-  height:25px;
+  /*height:25px;*/
   width: 40%;
   display: inline-block;
   float: none;
@@ -569,6 +569,9 @@ hr{
 }
 .wavectrl{
   margin-bottom: 5rem;
+}
+.navbar-header{
+  padding: 0;
 }
 
 }
